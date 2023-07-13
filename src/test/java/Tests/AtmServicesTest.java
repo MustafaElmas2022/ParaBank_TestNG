@@ -26,10 +26,9 @@ public class AtmServicesTest {
         Driver.closeDriver();
     }
 
-    ATMServices atm = new ATMServices();
     @Test(priority = 3)
     public void atmServices(){
-
+        ATMServices atm = new ATMServices();
         atm.atmServicesFoto.isDisplayed();
         atm.atmServicesText.isDisplayed();
         Assert.assertEquals(atm.atmServicesText.getText(), "ATM Services");
